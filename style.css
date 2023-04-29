@@ -17,18 +17,44 @@ nav{
     flex-wrap: wrap;
     align-content: center;
     height: 80px;
-    background-color: black;
+    background-color: rgb(255, 255, 255);
     z-index: 100;
 }
 
 .nav-option{
-    margin: 0 5%;
-    color: whitesmoke;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    margin: 0 20px;
+    color: rgb(0, 0, 0);
+    font-family: 'Poppins', sans-serif;
+}
+#nav-option-div{
+  margin-left: auto;
+  display: flex;
+  padding-right: 20px;
+}
+#contact-us-option-div{
+  height: auto;
+  width: auto;
+  padding: 5px;
+  background-color: #7421fc;
+  border-radius: 5px;
+}
+#contact-us-option-div:hover{
+  height: auto;
+  width: auto;
+  padding: 5px;
+  background-color: #641cd8;
+  border-radius: 5px;
+}
+#contact-us-option{
+  color: white;
+  cursor: pointer;
 }
 .underline{
+    margin-top: 5px;
     display: inline-block;
     position: relative;
+    cursor: pointer;
 }
 
 .underline::before{
@@ -38,7 +64,7 @@ nav{
     bottom: 0;
     width: 100%;
     height: 2px;
-    background-color: red;
+    background-color: rgb(0, 0, 0);
     border-radius: 4px;
     scale: 0 1;
     transform-origin: left;
@@ -50,10 +76,11 @@ nav{
 
 }
 .start{
-    height: 100vh;
+    height: 65vh;
     width: 100%;
     background-color: rgb(255, 255, 255);
-    position: relative;
+    display: flex;
+    flex-wrap: wrap;
     
     
 }
@@ -79,6 +106,8 @@ nav{
     flex-wrap: wrap;
     justify-content: center;
     margin-bottom: 40px;
+    z-index: 1000;
+    position: relative;
 }
 
 .end{
@@ -99,35 +128,35 @@ nav{
 
 .bg{
     height: 30rem;
-    position: absolute;
+    position: absolute; 
     width: 80%;
 }
 
 .head{
     position: absolute;
-    color: aqua;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgb(0, 0, 0);
+    font-family: 'Poppins', sans-serif;;
     left: 10px;
-    margin: 37vh 0;
+    margin: 25vh 0;
     font-size: 80px;
 }
 
 .sogo{
-    position: absolute;
-    color: rgb(0, 0, 0);
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    left: 10px;
-    margin: 48vh 14px;
-    font-size: 20px;
+  position: absolute;
+  color: rgb(0, 0, 0);
+  font-family: 'Poppins', sans-serif;
+  left: 91px;
+  margin: 42vh 14px;
+  font-size: 15px;
 }
 
 .image-design
 {
-    position: absolute;
-    right: 0;
-    margin: 128px 65px;
-    height: 450px;
-    width: 450px;
+  position: absolute;
+  right: 0;
+  margin: 75px 59px;
+  height: 390px;
+  width: 390px;
 }
 
 .svg-design{
@@ -181,12 +210,12 @@ footer{
   .card {
     display: grid;
     place-items: center;
-    height: 20.125rem;
+    height: 15rem;
     overflow: hidden;
     border-radius: 0.625rem;
     box-shadow: 0.25rem 0.25rem 0.5rem rgba(0, 0, 0, 0.25);
     margin: 35px 20px;
-    width: 280px;
+    width: 20%;
   }
   
   .card > * {
@@ -206,7 +235,7 @@ footer{
     flex-direction: column;
     justify-content: space-between;
     align-self: flex-end;
-    height: 55%;
+    height: 85%;
     padding: 12% 1.25rem 1.875rem;
     background: linear-gradient(
       180deg,
@@ -226,6 +255,7 @@ footer{
     color: white;
     font-family: 'Poppins';
     width: -moz-fit-content; /* Prefijo necesario para Firefox  */
+    font-size: 18px;
   }
   
   .card__title::after {
@@ -348,7 +378,7 @@ footer{
   }
   
   .button-57 {
-    position: relative;
+    position: absolute;
     overflow: hidden;
     border: 1px solid #18181a;
     color: #18181a;
@@ -358,13 +388,15 @@ footer{
     padding: 18px 18px 17px;
     text-decoration: none;
     cursor: pointer;
-    background: #fff;
+    background: #181818;
     user-select: none;
     -webkit-user-select: none;
     touch-action: manipulation;
-    top: 450px;
+    top: 400px;
     left: 270px;
     z-index: 2;
+    color: black;
+    height: 40px;
   }
   
   .button-57 span:first-child {
@@ -435,6 +467,8 @@ footer{
     user-select: none;
     -webkit-user-select: none;
     touch-action: manipulation;
+    z-index: 10000;
+    position: relative;
   }
   
   .button-89:hover,
@@ -464,7 +498,7 @@ footer{
   color: rgb(0, 0, 0);
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   left: 10px;
-  margin: 40vh 14px;
+  margin: 35vh 14px;
   font-size: 20px;
 }  
 .copyright {
@@ -618,4 +652,139 @@ a{
 a:visited{
   text-decoration: none;
   color: white;
+}
+
+
+
+
+/* slider */
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  width: 30%;
+  display: block;
+  height: 300px;
+  margin-left: 65%;
+  margin-top: 5%;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+  margin-right: 75px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+#dots{
+  margin-left: 69%;
+  text-align: center;
+  width: 300px;
+}
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+
+@media only screen and (max-width: 1280px){
+  .sogo{
+    margin: 39vh 14px;
+  }
+  .button-57 {
+    top: 450px;
+  }
+
+}
+
+
+@media only screen and (max-width: 1220px){
+  .head {
+    font-size: 4rem;
+}
+.sogo {
+  margin: 40vh 10px;
+}
+.button-57 {
+  top: 376px;
+}
+#dots{
+  margin-left: 65%;
+}
+.next{
+  margin-right: 55px;
+}
+.nav-option{
+  font-size: 16px;
+}
+footer{
+  padding: 40px 15%;
+}
 }
