@@ -11,14 +11,18 @@ body{
     font-family: 'Poppins', sans-serif;
     z-index: -2;
 }
-
+.NavbarMobileOptions{
+  display: none;
+}
 nav{
-    display: flex;
-    flex-wrap: wrap;
-    align-content: center;
-    height: 80px;
-    background-color: rgb(255, 255, 255);
-    z-index: 100;
+  position: sticky;
+  top: 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  height: 80px;
+  background-color: rgb(255, 255, 255);
+  z-index: 100000000000;
 }
 
 .nav-option{
@@ -49,6 +53,9 @@ nav{
 #contact-us-option{
   color: white;
   cursor: pointer;
+}
+.mobileNavbar{
+  display: none;
 }
 .underline{
     margin-top: 5px;
@@ -484,15 +491,22 @@ footer{
     background: var(--color);
     color: #fff;
   }
-
+  
 
 @media screen and (max-width: 767px){
+  
+  #dots{
+    margin-left: 30% !important;
+  }
+  .card{
+    width: 80%;
+  }
   .head {
     margin: 9% 8% !important;
 }    
 .sogo {
-  top: -23px;
-  left: 152px;
+  top: -86px;
+  left: 143px;
 }  
 .copyright {
   height: 50px;
@@ -524,7 +538,7 @@ footer{
   -webkit-user-select: none;
   touch-action: manipulation;
   top: 500px;
-  left: 135px;
+  left: -200;
 }
 .slideshow-container{
   width: 67% !important;
@@ -535,7 +549,7 @@ footer{
 }
 .button-57 {
   top: -372px !important;
-  left: 314px !important;
+  left: -200px !important;
 }
 }
 
@@ -1002,5 +1016,77 @@ footer{
 
   .screen-body-item {
     padding: 0;
+  }
+}
+@media screen and (max-width: 450px){
+  /* navbar options remove */
+  #removeOptions{
+    display: none;
+  }
+  #contact-us-option-div{
+    display: none;
+  }
+  .nav-option {
+    font-size: 25px;
+}
+  .mobileNavbar{
+    display: block;
+    background-image: url('./images/menu.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 45px;
+    width: 45px;
+    margin: 3px;
+  }
+ .NavbarMobileOptions{
+  display: none;
+  position: absolute;
+  z-index: 1000000000;
+  height: 50vh;
+  width: 100%;
+  background-color: #181818;
+  padding: 50% 0;
+  opacity: 0.99;
+  text-align: center;
+ }
+ .NavbarMobile{
+    color: white;
+    display: block;
+    margin: 0 15vh;
+    padding: 15px 0;
+ }
+
+  /* done */
+  .head{
+    font-size: 3rem;
+    text-align: center;
+  }
+  .slideshow-container{
+    width: 80% !important;
+    margin-left: 10% !important;
+    margin-top: 70% !important;
+  }
+  #dots {
+    position: initial;
+    margin: auto !important ;
+    display: block;
+  }
+  .start{
+    height: fit-content;
+  }
+  .button-57{
+    top: 1vh !important;
+    left: 16vh !important;
+  }
+  .next {
+    margin-right: 37px;
+}
+  .sogo
+    {
+      position: absolute;
+      top: -20px;
+      left: 10px;
+      text-align: center;
+  
   }
 }

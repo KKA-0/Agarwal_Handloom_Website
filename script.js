@@ -29,3 +29,18 @@ function showSlides(n) {
 setInterval(function() {
   plusSlides(1);
 }, 5000);
+
+
+function navbarForMobile(){
+  console.log("hi from navbar")
+  if($('#NavbarMobileOptions').hasClass('show')){
+    console.log('in hide')
+    $('#NavbarMobileOptions').removeClass('show')
+    $('#NavbarMobileOptions').css('display', 'none')
+  }
+  else{
+    console.log('in show')
+    $('#NavbarMobileOptions').addClass('show')
+    $('#NavbarMobileOptions').css('display', 'block')
+  }
+}

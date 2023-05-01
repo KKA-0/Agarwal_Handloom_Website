@@ -9,21 +9,28 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital@0;1&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
     <title>HOME</title>
 </head>
 <body>
     <nav>
         <h1 class="nav-option underline">Agarwal Handloom</h1>
         <div id="nav-option-div">
-          <h2 class="nav-option underline" onclick="location.href='./'">HOME</h2>
-          <h2 class="nav-option underline" onclick="location.href='./products.html'">PRODUCTS</h2>
+          <h2 class="nav-option underline" id="removeOptions" onclick="location.href='./'">HOME</h2>
+          <h2 class="nav-option underline" id="removeOptions" onclick="location.href='./products.html'">PRODUCTS</h2>
           <div id="contact-us-option-div">
             <h2 class="nav-option" id="contact-us-option" onclick="location.href='./contact.html'">CONTACT US</h2>
           </div>
         </div>
+        <div class="mobileNavbar" id="mobileNavbar" onclick="navbarForMobile()"></div>
     </nav>
+    <div class="NavbarMobileOptions" id="NavbarMobileOptions">
+      <h2 class="nav-option NavbarMobile" onclick="location.href='./'">HOME</h2>
+      <h2 class="nav-option NavbarMobile" onclick="location.href='./products.html'">PRODUCTS</h2>
+      <h2 class="nav-option NavbarMobile" id="contact-us-option" onclick="location.href='./contact.html'">CONTACT US</h2>
+    </div>
     <section class="start">
-        
+        ''
 <div class="slideshow-container">
 
   <div class="mySlides fade">
